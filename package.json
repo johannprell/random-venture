@@ -1,0 +1,17 @@
+{
+  "name": "random-venture",
+  "version": "0.0.1",
+  "description": "Random text adventure",
+  "main": "index.js",
+  "repository": "git@github.com:johannprell/random-venture.git",
+  "author": "Johann Prell",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
