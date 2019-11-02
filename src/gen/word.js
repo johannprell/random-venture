@@ -5,10 +5,27 @@ export function adjective() {
   return get(DB.adjectives.test)
 }
 
+export function anAdjective() {
+  return addArticle(adjective())
+}
+
 export function noun() {
   return get(DB.nouns.test)
 }
 
-function get(dbItem) {
-  return dbItem[randomInt(0, dbItem.length - 1)]
+export function aNoun() {
+  return addArticle(noun())
+}
+
+function get(db) {
+  return db[randomInt(0, db.length - 1)]
+}
+
+function addArticle(word) {
+  if('aeiou'.indexOf(word[0].toLowerCase()) !== -1) {
+    return `an ${word }`
+  }
+  else { 
+    return `a ${ word }` 
+  } 
 }

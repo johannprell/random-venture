@@ -1,3 +1,3 @@
 export const nouns = {
-  test: [ 'Test', 'Code', 'Bar' ]
+  test: [ 'Test', 'Code', 'Bar', 'Elevator', 'Avatar' ]
 }

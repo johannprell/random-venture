@@ -1,3 +1,3 @@
 export const adjectives = {
-  test: [ 'nice', 'dope', 'sweet' ]
+  test: [ 'nice', 'dope', 'sweet', 'inquisitive', 'elusive' ]
 }
