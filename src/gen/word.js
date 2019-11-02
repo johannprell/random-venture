@@ -1,22 +1,26 @@
 import { randomInt } from '../util'
 import * as DB from '../db'
 
-export function adjective() {
-  return get(DB.adjectives.test)
+export function adjective(key) {
+  return get(DB.adjectives[key])
 }
 
-export function anAdjective() {
-  return addArticle(adjective())
+export function anAdjective(key) {
+  return addArticle(adjective(key))
 }
 
-export function noun() {
-  return get(DB.nouns.test)
+export function noun(key) {
+  return get(DB.nouns[key])
 }
 
-export function aNoun() {
-  return addArticle(noun())
+export function aNoun(key) {
+  return addArticle(noun(key))
 }
 
+/**
+ * Get a random item from an array of strings
+ * @param {string[]} db 
+ */
 function get(db) {
   return db[randomInt(0, db.length - 1)]
 }

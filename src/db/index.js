@@ -1,2 +1,2 @@
-export { adjectives } from './adjectives'
-export { nouns } from './nouns'
+export { adjectives, adjectiveKey } from './adjectives'
+export { nouns, nounKey } from './nouns'
