@@ -1,1 +1,1 @@
-export { math } from './math'
+export { randomInt } from './math'

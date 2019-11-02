@@ -1,4 +1,4 @@
-import * as UTIL from './util'
+import { testGenerator } from './gen'
 
 window.onload = init
 
@@ -33,5 +33,5 @@ function print(text) {
 }
 
 function getRandomText() {
-  return 'this is a random text ' + UTIL.math.randomInt(0, 100)
+  return testGenerator()
 }
