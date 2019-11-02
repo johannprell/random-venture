@@ -12,6 +12,7 @@
     "dev": "parcel index.html"
   },
   "devDependencies": {
+    "eslint": "^6.6.0",
     "parcel": "^1.12.4"
   },
   "dependencies": {}
