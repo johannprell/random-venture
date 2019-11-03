@@ -1,5 +1,12 @@
-import { adjective, anAdjective, noun, aNoun, assertionResponse as AR } from '../gen'
-import { adjectiveKey as ak, nounKey as nk } from '../db'
+import { 
+  adjective,
+  anAdjective,
+  adjectiveKey as ak,
+  noun,
+  aNoun,
+  nounKey as nk,
+  assertionResponse as AR,
+ } from '../gen'
 
 export function example() {
   return ['Example', generateMainText(), AR.affirmative(), AR.negative()]

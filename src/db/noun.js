@@ -1,9 +1,3 @@
-export const nounKey = {
-  TEST: 'test',
-  CREATURE: 'creature',
-  ITEM: 'item'
-}
-
 export const noun = {
   test: [ 'Test', 'Code', 'Bar', 'Elevator', 'Avatar' ],
   creature: [
