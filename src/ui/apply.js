@@ -4,10 +4,10 @@ import {
   setChoices,
   enableButtons,
   disableButtons
-} from "./elements"
+} from './elements'
 
-let textToPrint = ""
-let currentText = ""
+let textToPrint = ''
+let currentText = ''
 let printIndex = 0
 let onPrintDone = () => {
   return void 0
@@ -35,7 +35,7 @@ export function apply(textArray) {
 
 function print(text) {
   textToPrint = text
-  currentText = ""
+  currentText = ''
   setMainText(currentText)
   printIndex = 0
   printStep()

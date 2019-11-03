@@ -4,7 +4,7 @@ let mainText
 let btn01
 let btn02
 // Hook into choice buttons
-let onChoiceCallback = () => { return void 0 }
+let onChoice = () => { return void 0 }
 
 export function init() {
   initHeader()
@@ -33,10 +33,6 @@ function initButtons() {
   btn02.onclick = () => { onChoice('btn02') }
 }
 
-function onChoice(id) {
-  onChoiceCallback(id)
-}
-
 // Public setters
 export function setChoices(choice01, choice02) {
   btn01.innerHTML = choice01
@@ -52,7 +48,7 @@ export function setMainText(value) {
 }
 
 export function setOnChoiceCallback(callback) {
-  onChoiceCallback = callback
+  onChoice = callback
 }
 
 // Handle choice buttons
