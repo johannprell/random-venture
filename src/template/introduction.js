@@ -1,6 +1,5 @@
 import { assertionResponse as ar, assertionResponseKey as ark , get} from '../db'
 
-// Create verbose intro, and affirmative / ambivalent response for button texts
 export function introduction() {
   return [ 'A call to adventure!', generateIntro(), get(ar[ark.AFF]), get(ar[ark.AMB]) ]
 }
