@@ -1,9 +1,11 @@
-import { get } from './get'
 import * as DB from '../db'
 
+export const word = {
+  adjective, anAdjective, noun, aNoun
+}
 
 export function adjective(key) {
-  return get(DB.adjective[key])
+  return DB.get(DB.adjective[key])
 }
 
 export function anAdjective(key) {
@@ -11,7 +13,7 @@ export function anAdjective(key) {
 }
 
 export function noun(key) {
-  return get(DB.noun[key])
+  return DB.get(DB.noun[key])
 }
 
 export function aNoun(key) {
@@ -20,9 +22,9 @@ export function aNoun(key) {
 
 function addArticle(word) {
   if('aeiou'.indexOf(word[0].toLowerCase()) !== -1) {
-    return `an ${word }`
+    return `an ${word}`
   }
   else { 
-    return `a ${ word }` 
+    return `a ${word}` 
   } 
 }

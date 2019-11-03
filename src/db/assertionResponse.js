@@ -16,7 +16,9 @@ export const assertionResponse = {
     'Yes!',
     'Yeah!',
     'YOLO!',
-    'Let\'s go!'
+    'Let\'s go!',
+    'Sound like a great idea.',
+    'I\'m up for it!'
   ],
   neg: [
     'Hell no.',
