@@ -9,7 +9,7 @@ function init() {
   UI.init()
   currentTemplate = TMPL.introduction
   UI.apply(currentTemplate.write())
-  // Game loop only ticks on choice button input
+  // Game loop only ticks on choice button input - game state branching part of templates
   UI.setOnChoiceCallback(
     evaluateChoice
   )
