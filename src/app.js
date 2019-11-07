@@ -7,7 +7,7 @@ window.onload = init
 function init() {
   console.log('This is a Random Venture.')
   UI.init()
-  currentTemplate = TMPL.introduction
+  currentTemplate = TMPL.introduction()
   UI.apply(currentTemplate)
   // Game loop only ticks on choice button input
   UI.setOnChoiceCallback(
