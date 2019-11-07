@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "rm -r dist && parcel build index.html",
     "dev": "parcel index.html"
   },
   "devDependencies": {
@@ -17,5 +17,8 @@
   },
   "dependencies": {
     "ui": "^0.2.4"
-  }
+  },
+  "eslintIgnore": [
+    "dist/"
+  ]
 }

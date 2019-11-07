@@ -1,17 +1,11 @@
 import * as DB from '../db'
 
-export const assertionResponse = {
-  affirmative, negative, ambivalent
+export const assertionResponseKey = {
+  AFFIRMATIVE: 'aff',
+  NEGATIVE: 'neg',
+  AMBIVALENT: 'amb'
 }
 
-function affirmative() {
-  return DB.get(DB.assertionResponse[DB.assertionResponseKey.AFF])
-}
-
-function negative() {
-  return DB.get(DB.assertionResponse[DB.assertionResponseKey.NEG])
-}
-
-function ambivalent() {
-  return DB.get(DB.assertionResponse[DB.assertionResponseKey.AMB])
+export function assertionResponse (key) {
+  return DB.get(DB.assertionResponse[key])
 }

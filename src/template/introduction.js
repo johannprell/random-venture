@@ -1,7 +1,12 @@
-import { assertionResponse as ar, assertionResponseKey as ark , get} from '../db'
+import { assertionResponse, assertionResponseKey } from '../gen'
 
 export function introduction() {
-  return [ 'A call to adventure!', generateIntro(), get(ar[ark.AFF]), get(ar[ark.AMB]) ]
+  return [ 
+    'A call to adventure!',
+    generateIntro(),
+    assertionResponse(assertionResponseKey.AFFIRMATIVE),
+    assertionResponse(assertionResponseKey.AMBIVALENT) 
+  ]
 }
 
 function generateIntro() {

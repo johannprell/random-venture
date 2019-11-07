@@ -3,12 +3,17 @@
  * Return randomized entries from db. For use inside templates.
  */
 
-export { 
-  adjectiveKey,
+export {
   adjective,
   anAdjective,
-  nounKey,
+  adjectiveKey
+} from './adjective'
+export {
   noun,
-  aNoun 
-} from './word'
-export { assertionResponse } from './assertionResponse'
+  aNoun,
+  nounKey
+} from './noun'
+export {
+  assertionResponse,
+  assertionResponseKey
+} from './assertionResponse'

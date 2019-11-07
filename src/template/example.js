@@ -5,11 +5,12 @@ import {
   noun,
   aNoun,
   nounKey as nk,
-  assertionResponse as AR,
+  assertionResponse as ar,
+  assertionResponseKey as ark
  } from '../gen'
 
 export function example() {
-  return ['Example', generateMainText(), AR.affirmative(), AR.negative()]
+  return ['Example', generateMainText(), ar(ark.AFFIRMATIVE), ar(ark.NEGATIVE)]
 }
 
 function generateMainText() {
