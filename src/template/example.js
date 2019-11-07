@@ -9,8 +9,13 @@ import {
   assertionResponseKey as ark
  } from '../gen'
 
-export function example() {
-  return ['Example', generateMainText(), ar(ark.AFFIRMATIVE), ar(ark.NEGATIVE)]
+export const example = {
+  write: () => {
+    return ['Example', generateMainText(), ar(ark.AFFIRMATIVE), ar(ark.NEGATIVE)]
+  },
+  eval: () => {
+    return example
+  }
 }
 
 function generateMainText() {

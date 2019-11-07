@@ -1,12 +1,19 @@
 import { assertionResponse, assertionResponseKey } from '../gen'
 
-export function introduction() {
-  return [ 
-    'A call to adventure!',
-    generateIntro(),
-    assertionResponse(assertionResponseKey.AFFIRMATIVE),
-    assertionResponse(assertionResponseKey.AMBIVALENT) 
-  ]
+import { example } from './example'
+
+export const introduction = {
+  write: () => {
+    return [ 
+      'A call to adventure!',
+      generateIntro(),
+      assertionResponse(assertionResponseKey.AFFIRMATIVE),
+      assertionResponse(assertionResponseKey.AMBIVALENT) 
+    ]
+  },
+  eval: () => {
+    return example
+  }
 }
 
 function generateIntro() {
