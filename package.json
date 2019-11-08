@@ -2,7 +2,7 @@
   "name": "random-venture",
   "version": "0.0.1",
   "description": "Random text adventure",
-  "main": "app.js",
+  "main": "game.js",
   "repository": "git@github.com:johannprell/random-venture.git",
   "author": "Johann Prell",
   "license": "MIT",

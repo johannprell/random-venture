@@ -14,7 +14,7 @@ export const example = {
     return ['Example', generateMainText(), ar(ark.AFFIRMATIVE), ar(ark.NEGATIVE)]
   },
   eval: () => {
-    return example
+    return undefined
   }
 }
 

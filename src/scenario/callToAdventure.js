@@ -1,8 +1,6 @@
 import { assertionResponse, assertionResponseKey } from '../gen'
 
-import { example } from './example'
-
-export const introduction = {
+export const callToAdventure = {
   write: () => {
     return [ 
       'A call to adventure!',
@@ -12,7 +10,7 @@ export const introduction = {
     ]
   },
   eval: () => {
-    return example
+    return undefined
   }
 }
 
