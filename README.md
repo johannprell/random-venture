@@ -1,2 +1,2 @@
 # random-venture
-Random text adventure
+Procedural text adventure
