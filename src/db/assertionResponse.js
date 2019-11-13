@@ -37,7 +37,7 @@ export const assertionResponse = {
     'ALRIGHT!',
     'I love it.',
     'I\'m intrigued...',
-    'I\'m listning...',
+    'I\'m listening...',
     'You have my ear.',
   ],
   neg: [
