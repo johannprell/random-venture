@@ -1,4 +1,5 @@
 // Html elements
+let container
 let header
 let mainText
 let btn01
@@ -7,13 +8,16 @@ let btn02
 let onChoice = () => { return void 0 }
 
 export function init() {
+  container = document.getElementById('container')
   initHeader()
   initMainText()
   initButtons()
 
+  // Global debug object
   window.buttons = {
     hide: disableButtons,
-    show: enableButtons
+    show: enableButtons,
+    setChoices 
   }
 }
 
@@ -35,16 +39,16 @@ function initButtons() {
 
 // Public setters
 export function setChoices(choice01, choice02) {
-  btn01.innerHTML = choice01
-  btn02.innerHTML = choice02
+  btn01.innerText = choice01
+  btn02.innerText = choice02
 }
 
 export function setHeader(value) {
-  header.innerHTML = value
+  header.innerText = value
 }
 
 export function setMainText(value) {
-  mainText.innerHTML = value
+  mainText.innerText = value
 }
 
 export function setOnChoiceCallback(callback) {
@@ -53,11 +57,11 @@ export function setOnChoiceCallback(callback) {
 
 // Handle choice buttons
 export function enableButtons() {
-  btn01.disabled = false
-  btn02.disabled = false
+  container.appendChild(btn01)
+  container.appendChild(btn02)
 }
 
 export function disableButtons() {
-  btn01.disabled = true
-  btn02.disabled = true
+  container.removeChild(btn01)
+  container.removeChild(btn02)
 }
